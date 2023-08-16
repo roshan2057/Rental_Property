@@ -29,9 +29,14 @@ body {
     /* Adjust the alpha values for the desired dimness */
 }
 
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
 .nav {
     position: absolute;
-    width: 100%;
+    width: 95%;
     background: transparent;
     top: 0;
     box-sizing: border-box;
@@ -40,6 +45,9 @@ body {
     align-items: baseline;
     z-index: 2;
     border-bottom: 2px solid #eaeaea; 
+
+
+    padding: 19px 20px 10px 120px;
 }
 
 .nav ul {
@@ -47,18 +55,14 @@ body {
     list-style: none;
 }
 
-.nav .logo {
-    margin: 19px 0px 0px 120px;
-}
+
 
 .nav .logo img {
     width: 147px;
     height: 50px;
 }
 
-.nav ul li {
-    padding: 0px 75px;
-}
+
 
 .nav ul li a {
     text-decoration: none;
@@ -76,6 +80,26 @@ body {
     border-radius: 3px;
     border-bottom: 4px solid #eaeaea; 
     z-index: 3;
+}
+.nav .button button{
+    background: transparent;
+    border: none;
+}
+
+.nav .button button a{
+    
+    background: #F4511E;
+    color: white;
+    font-feature-settings: 'salt' on, 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 15px 20px;
+    border-radius: 10px;
+
+
 }
 
 .background .header {
@@ -598,6 +622,47 @@ box-shadow: 5px 24px 53px 0px rgba(0, 0, 0, 0.25);
 
 
 
+/* calcutator section  */
+.calculator-main{
+    background: rgba(244, 81, 30, 0.07);
+}
+.calculator{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+
+.calculator span{
+    color: var(--text-gray-900, #18191F);
+font-feature-settings: 'salt' on, 'liga' off;
+font-family: Inter;
+font-size: 36px;
+font-style: normal;
+font-weight: 800;
+line-height: 64px; /* 177.778% */
+text-transform: capitalize;
+}
+
+.calculator button {
+
+    height: 55px;
+    border-radius: 13px;
+    background: #F4511E;
+    color: white;
+    border: none;
+    text-align: center;
+    font-feature-settings: 'salt' on, 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 22px 28px 21px 30px;
+}
+
+
+
 /* contact section  */
 .contact .title {
     text-align: center;
@@ -650,12 +715,11 @@ form {
     padding: 0 50px;
 }
 
-.contact .form form input,
-.contact .form form select {
+.contact .form form .input,
+.contact .form form .select {
     display: flex;
     width: 15rem;
     height: 3rem;
-
     border-radius: 5px;
     border: 1px solid #E6E6E6;
     background: #F9F9F9;
@@ -711,12 +775,29 @@ form textarea {
     background: #F9F9F9;
 }
 
-.field input[type="file"]::-webkit-file-upload-button {
 
 
+
+.field input[type="file"] {
+
+display: flex;
+justify-content: space-around;
     border-radius: 5px;
     border: 1px solid #E6E6E6;
-    background: #c43030;
+    width: 100%;
+    height: 5rem;
+    border:2px red dotted;
+}
+
+.field input[type="file"]::-webkit-file-upload-button {
+border: none;
+
+    border-radius: 3px;
+    background: transparent;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 40%;
+    align-items: center;
 }
 
 
@@ -745,8 +826,8 @@ form label span {
 }
 
 .row-file .field {
-    margin: auto;
     display: flex;
+    width: 100%;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
