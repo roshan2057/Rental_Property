@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav {
+    position: absolute;
+    width: 95%;
+    background: transparent;
+    top: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    z-index: 2;
+    border-bottom: 2px solid #eaeaea; 
+
+
+    padding: 19px 20px 10px 120px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+
+
+.nav .logo img {
+    width: 147px;
+    height: 50px;
+}
+
+
+
+.nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 70.187%;
+    margin: 50px 54px 0px 0px;
+    padding: 0 8px 21px;
+
+}
+.nav ul li a:hover {
+    border-radius: 2px;
+    border-bottom: 4px solid #eaeaea; 
+    z-index: 3;
+}
+.nav .button button{
+    background: transparent;
+    border: none;
+}
+
+.nav .button button a{
+    
+    background: #F4511E;
+    color: white;
+    font-feature-settings: 'salt' on, 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 15px 20px;
+    border-radius: 10px;
+
+
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav">
+
+
+            <div class="logo">
+                <a href="/">
+                    <img src="/images/logo 1.png" alt="logo">
+
+                </a>
+
+            </div>
+            <ul>
+                <li><a href="/"> Home</a></li>
+                <li><a href="#about"> About</a></li>
+                <li><a href="#contact"> Contact Us</a></li>
+            </ul>
+            <div class="button">
+                <button><a href="/">Advertise</a></button>
+                <button><a href="Views/Signup.html">SignIn</a></button>
+                </button>
+            </div>
+        </div>
+
+    </nav>
+
+</body>
+</html>
