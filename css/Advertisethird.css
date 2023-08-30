@@ -1,0 +1,443 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.wrap {
+  width: 100%;
+  height: 60px;
+  background-color: #f8f8f8;
+  box-shadow: 5px 10px #00000010;
+}
+
+.items--container {
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+.button--one {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  background-color: red;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+}
+
+.icon--container {
+  display: flex;
+  margin-top: 35px;
+  justify-content: center;
+  align-items: center;
+}
+
+.first--icon {
+  background-image: url(../assests/assests3/Ellipse\ 34.svg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.first--icon img {
+  height: 23px;
+  width: 23px;
+}
+.second--icon {
+  background-image: url(../assests/assests3/Ellipse\ 35.svg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.second--icon img {
+  height: 23px;
+  width: 23px;
+}
+
+.third--icon {
+  background-image: url(../assests/assests3/Ellipse\ 36.svg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.third--icon img {
+  height: 23px;
+  width: 23px;
+}
+
+.four--icon {
+  background-image: url(../assests/assests3/Ellipse\ 37.svg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.four--icon img {
+  height: 23px;
+  width: 23px;
+}
+.line {
+  width: 138px;
+  height: 1px;
+  border: 1px solid #aeaeae;
+}
+.section--container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.second--section--container {
+  width: 1200px;
+  height: 470px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+.third--container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 20px 0 20px 20px;
+}
+.header--title h5 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.name--container {
+  display: flex;
+  flex-direction: column;
+}
+.name--container p {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+}
+
+.name--container input {
+  width: 250px;
+  height: 43px;
+  outline: none;
+  border: 0.5px solid #0000004d;
+  border-radius: 5px;
+}
+.mobile--container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.first--number--wrapper p {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+}
+.first--number--wrapper input {
+  width: 250px;
+  height: 43px;
+  outline: none;
+  border: 0.5px solid #0000004d;
+  border-radius: 5px;
+}
+.telephone--container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.fax--wrapper p {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+}
+.fax--wrapper input {
+  width: 250px;
+  height: 43px;
+  outline: none;
+  border: 0.5px solid #0000004d;
+  border-radius: 5px;
+}
+
+.next--button {
+  display: flex;
+  justify-content: center;
+}
+.button--box {
+  width: 900px;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  justify-content: center;
+}
+.button--container--one {
+  margin-top: 30px;
+  color: white;
+  width: 130px;
+  height: 35px;
+  display: flex;
+  border: none;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4511e;
+}
+
+/* FOR MOBILE DEVICES */
+
+@media screen and (max-width: 500px) {
+  .wrap {
+    width: 500px;
+    height: 57px;
+  }
+  .items--container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10px;
+  }
+  .button--one {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    width: 65px;
+    font-size: 13px;
+    background-color: red;
+    border: none;
+    padding: 14px;
+    border-radius: 9px;
+    color: white;
+    justify-content: center;
+  }
+  .icon--container {
+    display: flex;
+    margin-top: 32px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .first--icon {
+    background-image: url(../assests/assests3/Ellipse\ 34.svg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+  }
+  .first--icon img {
+    height: 18px;
+    width: 18px;
+  }
+  .second--icon {
+    background-image: url(../assests/assests3/Ellipse\ 35.svg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .second--icon img {
+    height: 18px;
+    width: 18px;
+  }
+
+  .third--icon {
+    background-image: url(../assests/assests3/Ellipse\ 36.svg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .third--icon img {
+    height: 18px;
+    width: 18px;
+  }
+
+  .four--icon {
+    background-image: url(../assests/assests3/Ellipse\ 37.svg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .four--icon img {
+    height: 18px;
+    width: 18px;
+  }
+  .line {
+    width: 100px;
+    height: 1px;
+    border: 1px solid #aeaeae;
+  }
+
+  .section--container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .second--section--container {
+    width: 450px;
+    height: 350px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+  }
+  .third--container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin: 10px 0 10px 10px;
+  }
+  .header--title h5 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .name--container {
+    display: flex;
+    flex-direction: column;
+  }
+  .name--container p {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+  }
+
+  .name--container input {
+    width: 130px;
+    height: 30px;
+    outline: none;
+    border: 0.5px solid #0000004d;
+    border-radius: 5px;
+  }
+  .mobile--container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .first--number--wrapper p {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+  }
+  .first--number--wrapper input {
+    width: 130px;
+    height: 30px;
+    outline: none;
+    border: 0.5px solid #0000004d;
+    border-radius: 5px;
+  }
+  .telephone--container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .fax--wrapper p {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+  }
+  .fax--wrapper input {
+    width: 130px;
+    height: 30px;
+    outline: none;
+    border: 0.5px solid #0000004d;
+    border-radius: 5px;
+  }
+
+  .next--button {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .button--box {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    height: 92px;
+    justify-content: center;
+  }
+
+  .button--container--one {
+    margin-top: 15px;
+    color: white;
+    width: 75px;
+    height: 30px;
+    font-size: 14px;
+    display: flex;
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4511e;
+  }
+}
